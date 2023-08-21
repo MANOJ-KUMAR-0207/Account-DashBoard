@@ -1,0 +1,375 @@
+/* @font-face
+{
+    font-family: HelveticaNeue;
+    src: url("../Assets/Fonts/Helvetica\ NeueLTW0693BlkExtObl.ttf");
+} */
+.aboutColumn1
+{
+  flex-basis: 30%;
+  font-family: HelveticaNeue;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.aboutColumn2,.aboutColumn3
+{
+  flex-basis: 15%;
+  margin-right:80px;
+}
+.aboutColumn2 p ,.aboutColumn3 p
+{
+  font-family: HelveticaNeue;
+  font-size: 12px;;
+  line-height: 2.92;
+  letter-spacing: 0.5px;
+  color:white;
+  margin-bottom:5px;
+  margin-top:0px;
+}
+.aboutColumn4
+{
+  font-family: BerkeleyStd;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  border: none;
+  color: white;
+}
+.aboutColumn4 input
+{
+  height:40px;
+  width:200px;
+  box-sizing: border-box;
+}
+.aboutContainer
+{
+  background-color:  #022737;
+  padding-left: 140px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display:flex;
+}
+.balanceContainer
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+.balance
+{
+    height:172px;
+    width:373px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+.balanceHeading
+{
+  font-family: BerkeleyStd;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  color: #022737;
+}
+.balanceAmount
+{ 
+  font-family: HelveticaNeue;
+  font-size: 42px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #69923a;
+  margin-bottom:28px;
+}
+.blueTop
+{
+    border-bottom-left-radius: 17.5px;
+    border-bottom-right-radius: 17.5px;
+    border: 2px solid #006778;
+    color: white;
+    background-color: #006778;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-right:95px;
+}
+.buttonDiv
+{
+    text-align: right;
+}
+.copyRight
+{
+  margin-top:35px;
+  color:white;
+}
+.content
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.cross
+{
+    float: right;
+    color:  #022737;
+    height:25px;
+    width:25px;
+}
+.description, .tabColumn1 p, .tabColumn2 p, .tabColumn3 p
+{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #505050;
+}
+footer{
+  background-color:#f2f2f2 ;
+  text-align: center;
+  padding-top:35px;
+  padding-bottom:30px;
+  font-family: HelveticaNeue;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+.fundButtons
+{
+  text-align: center;
+  padding:50px 0px;
+
+}
+.fundButtons button
+{
+  height:50px;
+  width:500px;
+  margin-right:20px;
+  background-color: #006778;
+  color:white;
+  border: none;;
+}
+.go
+{
+  float: right;
+  height:40px;
+  width:40px;
+  color: white;
+  background-color: #006778;
+  border: 2px solid white;
+}
+.info
+{
+    padding-left: 120px;
+    background-color:#f2f2f2;
+    padding-top:50px;
+    display: flex;
+}
+.infoDiv
+{
+    margin-left: 20px;
+    width:620px;
+    height:364px;
+    background-color: white;
+    padding-right:20px;
+}
+.image
+{
+    display:inline-block;
+    padding-left: 130px;
+    margin-right:75px;
+}
+.links
+{
+    display:inline-block;
+    box-sizing: border-box;
+}
+.linkedin
+{
+  padding-top:35px;
+  color: #b6bdbd
+}
+div.message
+{
+  height: 44px;
+  padding: 12px 0 0;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  border-bottom: solid 3px #006778;
+}
+.message span
+{
+  width: 695px;
+  height: 20px;
+  margin: 0 5px 11px 120px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #505050;
+}
+.message a
+{
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #006778;
+}
+.nav
+{
+    height:65px;
+    box-sizing: border-box;
+    width:100vw;
+    display: flex;
+    align-items: center;
+}
+.navLinks
+{
+    text-align: right;
+    margin-left:20px;
+    color: #022737;
+    text-decoration: none;
+    height:65px;
+    padding-bottom:20px;
+}
+.navigation
+{
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #505050;
+  margin-left:120px;
+  padding-top: 15px;
+}
+.optionBox
+{
+    box-sizing: border-box;
+    height:56px;
+    padding:20px 10px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #505050;
+    border:rgba(128, 152, 213, 0.08) solid 1px;
+    float: left;
+    background-color: #f2f2f2;
+}
+.selected
+{
+   background-color: white ;
+   border-top: #006778 2px solid;
+}
+.optionNav
+{
+    height:56px;
+}
+.tab
+{
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.tab span
+{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.5px;
+  color: #006778;
+  margin-top: 20px;
+}
+.tabColumns
+{
+  display: flex;
+}
+.tabColumns div
+{
+  flex-basis: 30%;;
+}
+.title
+{
+    padding-left:120px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #505050;
+}
+.title h1
+{
+  font-family: BerkeleyStd;
+  font-size: 42px;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+  color: #022737;
+}
+.title h2
+{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #022737;
+}
+.top
+{
+    max-height:30px;
+    background-color:  #022737;
+    color:white;
+    text-align: right;
+    padding: 10px 95px 10px 150px;;
+}
+.top span
+{
+    margin-left: 40px;
+}   
+.top select
+{
+    width: 175px;
+    height: 15px;
+    border-radius: 10.5px;
+    margin: 0 11px 0 0;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+.warning
+{ 
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #505050;
+  margin: 30px 120px ;
+  border-left:3px solid #e37222;
+  padding-left:30px;
+  background-color:#f2f2f2;
+  height:65px;
+  padding-top:40px;
+  padding-right:30px;
+}
+.warning a
+{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #006778;
+}
+.warning i
+{
+    color: #e37222;
+    margin-right: 20px;
+}
+.view
+{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.5px;
+  color: #006778;
+}
