@@ -56,13 +56,14 @@
 }
 .balance
 {
-    height:172px;
-    width:373px;
-    background-color: white;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    padding-top:20px;
-    box-sizing: border-box;
+  box-shadow: 0 9px 21px 0 rgba(128, 152, 213, 0.08);
+  height:172px;
+  width:373px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top:20px;
+  box-sizing: border-box;
 }
 .balanceHeading
 {
@@ -129,7 +130,6 @@
 .featured
 {
   display:flex;
-  width:100vw;
   background-color: #f2f2f2;
   justify-content: center;
   padding-bottom: 50px;
@@ -137,7 +137,7 @@
 .featuredNavigationButtons
 {
   display: flex;
-  flex-basis: 4%;
+  flex-basis: 7%;
   padding-left: 20px;
   align-items: center;
   background-color: white;
@@ -161,7 +161,7 @@
 .featuredColumn1 h3
 {
   font-family: HelveticaNeue;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.43;
   color: #505050;
 }
@@ -233,11 +233,12 @@ footer{
 }
 .infoDiv
 {
-    margin-left: 20px;
-    width:750px;
-    height:364px;
-    background-color: white;
-    padding-right:20px;
+  box-shadow: 0 9px 21px 0 rgba(128, 152, 213, 0.08);
+  margin-left: 20px;
+  width:750px;
+  height:364px;
+  background-color: white;
+  padding-right:20px;
 }
 .image
 {
