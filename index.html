@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account DashBoard</title>
-    <link rel="stylesheet" href="Style Sheets/index.css">
+    <link rel="stylesheet" href="StyleSheets/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="Scripts/index.js"></script>
 </head>
 
 <body>
     <header>
         <div class="top">
-            <span>Need Assistence?</span>
+            <span class="assistence">Need Assistence?</span>
             <span>
                 <select>
                     <option>A1029087 - John Carson Ec...</option>
@@ -29,13 +30,22 @@
                 <img src="Assets/Images/logo.png" width=143px height=60px>
             </div>
             <div class="links">
-                <a href="#" class="navLinks">ACCOUNT SUMMARY</a>
+                <a href="#" class="navLinks tabSelected">ACCOUNT SUMMARY</a>
                 <a href="#" class="navLinks">GRANTS</a>
                 <a href="#" class="navLinks">CONTRIBUTIONS</a>
                 <a href="#" class="navLinks">INVESTMENTS</a>
                 <a href="#" class="navLinks">RESOURCES</a>
                 <a href="#" class="navLinks">MY ACCOUNT</a>
+                <div id="dropDown" class="dropdown-content">
+                    <a href="#" class="navLinks">ACCOUNT SUMMARY</a>
+                    <a href="#" class="navLinks">GRANTS</a>
+                    <a href="#" class="navLinks">CONTRIBUTIONS</a>
+                    <a href="#" class="navLinks">INVESTMENTS</a>
+                    <a href="#" class="navLinks">RESOURCES</a>
+                    <a href="#" class="navLinks">MY ACCOUNT</a>
+                </div>
             </div>
+            <button onclick="dropDown()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     <div class="content">
@@ -57,9 +67,15 @@
             <span>Balances as of 12/12/2012</span>
         </div>
         <div class="warning" id="warning">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <span>There is a <a href="#">Pending Contribution</a> on your Account that needs attention.</span>
-            <span class="fa-solid fa-xmark cross"></span>
+            <div class="warningLogo">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="warningMessage">
+                <span>There is a <a href="#">Pending Contribution</a> on your Account that needs attention.</span>
+            </div>
+            <div class="closeWarning">
+                <span class="fa-solid fa-xmark cross"></span>
+            </div>
         </div>
         <div class="info">
             <div class="balanceContainer">
