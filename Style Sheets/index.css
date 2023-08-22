@@ -109,6 +109,7 @@
 {
     display:flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .cross
@@ -125,6 +126,69 @@
   line-height: 1.5;
   color: #505050;
 }
+.featured
+{
+  display:flex;
+  width:100vw;
+  background-color: #f2f2f2;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.featuredNavigationButtons
+{
+  display: flex;
+  flex-basis: 4%;
+  padding-left: 20px;
+  align-items: center;
+  background-color: white;
+}
+.featuredNavigationButtons button
+{
+  border-radius: 50%;
+  height:27px;
+  width:27px;
+  background-color: white;
+  border: solid 0.6px #727272;
+  color: #727272;
+}
+.featuredColumn1
+{
+  flex-basis: 17%;
+  padding-top: 28px;
+  padding-bottom: 58px;
+  background-color: white;
+}
+.featuredColumn1 h3
+{
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #505050;
+}
+.featuredColumn1 span
+{
+  font-family: BerkeleyStd;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  color: #022737;
+}
+.featuredColumn2
+{
+  padding-left:80px;
+  flex-basis: 52%;
+  padding-top: 60px;
+  background-color: white;
+}
+.featuredColumn2 span
+{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #505050;
+}
+
 footer{
   background-color:#f2f2f2 ;
   text-align: center;
@@ -161,7 +225,8 @@ footer{
 }
 .info
 {
-    padding-left: 120px;
+    width:100nv;
+    justify-content: center;
     background-color:#f2f2f2;
     padding-top:50px;
     display: flex;
@@ -169,7 +234,7 @@ footer{
 .infoDiv
 {
     margin-left: 20px;
-    width:620px;
+    width:750px;
     height:364px;
     background-color: white;
     padding-right:20px;
@@ -179,6 +244,20 @@ footer{
     display:inline-block;
     padding-left: 130px;
     margin-right:75px;
+}
+.learnMore
+{
+  margin-top: 20px;
+}
+.learnMore a
+{
+  text-decoration: none;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.5px;
+  color: #006778;
 }
 .links
 {
@@ -381,4 +460,37 @@ div.message
   font-stretch: condensed;
   letter-spacing: 0.5px;
   color: #006778;
+}
+.viewButtons
+{
+  background-color:#f2f2f2;
+  padding: 30px 0px;
+  justify-content: center;
+  display: flex;
+}
+.viewButtons button
+{
+  color: white;
+  background-color: #006778;
+  border: none;
+  flex-basis: 22%;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.5px;
+  padding:15px 0px;
+  margin-right: 20px;
+}
+.viewButtons select
+{
+  padding:15px 0px;
+  color: #006778;
+  border: none;
+  width: 273px;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.5px;
 }
