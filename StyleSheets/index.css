@@ -33,7 +33,7 @@
 {
   font-family: BerkeleyStd;
   flex-basis: 40%;
-  font-size: 40px;
+  font-size: 16px;
   line-height: 1;
   letter-spacing: 0.5px;
   border: none;
@@ -45,6 +45,10 @@
   width:90%;
   padding-left:3%;
   box-sizing: border-box;
+}
+.aboutColumn4 p
+{
+  opacity: 0.5;
 }
 .aboutContainer
 {
@@ -308,6 +312,7 @@ footer
 {
   box-shadow: 0 9px 21px 0 rgba(128, 152, 213, 0.08);
   margin-left: 20px;
+  width:100%;
   flex-basis: 70%;
   height:364px;
   background-color: white;
@@ -416,8 +421,7 @@ footer
 }
 .tab
 {
-  padding-top: 20px;
-  padding-left: 30px;
+  padding: 20px 30px;
 }
 .tab a
 {
@@ -431,10 +435,11 @@ footer
 .tabColumns
 {
   display: flex;
+  flex-wrap: wrap;
 }
-.tabColumns div
+.tabColumn
 {
-  flex-basis: 30%;;
+  flex-basis: 30%;
 }
 .tabSelected ,.links a:hover
 {
@@ -642,6 +647,10 @@ footer
       opacity: 0.5;
       margin:44px 0px;
     }
+    .description
+    {
+      margin-right: 30%;
+    }
     .desktop
     {
       display:none;
@@ -752,12 +761,14 @@ footer
       line-height: 1;
       letter-spacing: 0.5px;
       color: #505050;
+      padding: 15px;
     }
     .optionNav
     {
       display: flex;
-      height:52px;
-      overflow-y: auto;
+      flex-wrap: wrap;
+      flex-direction: row;
+      overflow-y:scroll;
     }
     .socialLogos
     {
@@ -775,6 +786,14 @@ footer
       opacity: 0.5;
       border:3px solid white;
 
+    }
+    .tabColumns
+    {
+      display:flex;
+    }
+    .tabColumn
+    {
+      flex-basis: 50%;
     }
     .title
     {
@@ -809,7 +828,7 @@ footer
     }
     .links
     {
-      display: none;
+     display: none;
     }
     .show
     {
