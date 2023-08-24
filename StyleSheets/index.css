@@ -203,7 +203,7 @@ div.message
 }
 .featuredColumn1
 {
-  flex-basis: 22%;
+  flex-basis: 30%;
   padding-top: 28px;
   padding-bottom: 58px;
   background-color: white;
@@ -226,7 +226,7 @@ div.message
 }
 .featuredColumn2
 {
-  flex-basis: 60%;
+  flex-basis: 70%;
   padding-top: 60px;
   padding-left: 6%;
   background-color: white;
@@ -238,7 +238,11 @@ div.message
   line-height: 1.5;
   color: #505050;
 }
-
+.featuredContent
+{
+  display:flex;
+  flex-basis:100%
+}
 footer
 {
   background-color:#f2f2f2 ;
@@ -341,6 +345,10 @@ footer
   font-size: 14px;
   line-height: 1.43;
   color: #006778;
+}
+.mobile
+{
+  display:none;
 }
 .nav
 {
@@ -596,6 +604,10 @@ footer
       padding-right: 0px;
       text-align: right;
     }
+    .desktop
+    {
+      display:none;
+    }
     div.message
     {
       padding:10px 5%;
@@ -607,6 +619,46 @@ footer
     .featured
     {
       padding:0px 5%;
+      padding-bottom: 40px;
+    }
+    .featuredNavigationButtons
+    {
+      padding-left:3%;
+      padding-right: 3%; 
+      flex-basis:20%
+    }
+    .featuredContent
+    {
+      flex-direction: column;
+    }
+    .featuredContent h4
+    {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #505050;
+    }
+    .featuredContent span
+    {
+       font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+        color: #022737;
+     }
+    .featuredColumn1
+    {
+      padding-top: 20px;
+      padding-bottom:5px;
+    }
+    .featuredColumn2
+    {
+      padding:0;
+    }
+    .featuredColumn2 span
+    {
+      font-size: 14px;
+      line-height: 1.43;
+      color: #505050;
     }
     footer
     {
@@ -621,6 +673,7 @@ footer
     {
       width:100%;
       height:50px;
+      padding:16px 0;
       margin-bottom: 20px;
     }
     .info
@@ -635,18 +688,33 @@ footer
       padding-right: 0px;
       display: flex;
       flex-direction: column;
+      overflow: scroll;
     }
     .image
     {
       flex-basis: 65%;
     }
-    .optionNav
+    .learnMore 
     {
-      overflow-x: scroll;
+      padding-bottom: 20px;
     }
     .nav
     {
       padding:11px 5%;
+    }
+    .optionBox span
+    {
+      font-family: HelveticaNeue;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      color: #505050;
+    }
+    .optionNav
+    {
+      display: flex;
+      height:52px;
     }
     .title
     {
@@ -686,6 +754,10 @@ footer
     .show
     {
       display: block;
+    }
+    .mobile
+    {
+      display:block;
     }
     .navigation
     {
