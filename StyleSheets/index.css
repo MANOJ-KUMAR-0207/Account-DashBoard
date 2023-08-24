@@ -761,8 +761,9 @@ footer
     }
     .socialLogos
     {
-      display:inline-block;
+      display:flex;
       text-align:center;
+      justify-content: space-between;
     }
     .socialLogos button
     {
