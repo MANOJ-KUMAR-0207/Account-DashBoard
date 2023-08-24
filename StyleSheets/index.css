@@ -140,6 +140,11 @@ body
   flex-basis: 10%;
   padding-right:20px;
 }
+.closeWarning button
+{
+  border:none;
+  cursor: pointer;
+}
 .description, .tabColumn1 p, .tabColumn2 p, .tabColumn3 p
 {
   font-family: HelveticaNeue;
@@ -735,7 +740,6 @@ footer
       padding-right: 0px;
       display: flex;
       flex-direction: column;
-      overflow: scroll;
     }
     .image
     {
@@ -753,6 +757,16 @@ footer
     {
       padding:11px 5%;
     }
+    .navLinks
+    {
+      height:20px;
+    }
+    .navLinks:hover
+    {
+      background-color: #022737;
+      color: white;
+      transition: 0.5s;
+    }
     .optionBox span
     {
       font-family: HelveticaNeue;
@@ -768,7 +782,6 @@ footer
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      overflow-y:scroll;
     }
     .socialLogos
     {
