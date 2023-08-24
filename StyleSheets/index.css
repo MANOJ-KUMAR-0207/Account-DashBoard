@@ -303,7 +303,6 @@ footer
 .image
 {
     display:inline-block;
-    margin-right:75px;
 }
 .learnMore
 {
@@ -358,6 +357,7 @@ footer
     color: #022737;
     text-decoration: none;
     font-weight: bold;
+    font-size:15px;
     height:65px;
     padding-bottom:20px;
 }
@@ -560,34 +560,98 @@ footer
   font-stretch: condensed;
   letter-spacing: 0.5px;
 }
-@media(max-width:800px)
+@media(max-width:1000px)
 {
     .assistence
     {
       display: none;
     }
+    .balanceContainer
+    {
+      width: 100%;
+      margin-right: 0px;
+    }
+    .balance
+    {
+      height: 120px;
+    }
+    .balanceAmount
+    {
+      font-size: 36px;
+      margin-bottom: 27px;
+    }
+    .balanceHeading
+    {
+      margin:1px 0px;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+    .buttonDiv
+    {
+      text-align: right;
+      padding-right:5%;
+    }
+    .closeWarning
+    {
+      padding-right: 0px;
+      text-align: right;
+    }
     div.message
     {
-      padding:10px 22px;
+      padding:10px 5%;
     }
     .dropbtn
     {
       display:block
     }
+    .featured
+    {
+      padding:0px 5%;
+    }
+    footer
+    {
+      display: none;
+    }
+    .fundButtons
+    {
+      padding: 40px 5%;
+      flex-direction: column;
+    }
+    .fundButtons button, .fundButton1
+    {
+      width:100%;
+      height:50px;
+      margin-bottom: 20px;
+    }
     .info
     {
       flex-direction: column;
       align-items: center;
-      padding:40px 22px;
+      padding:40px 5%;
+    }
+    .infoDiv
+    {
+      margin:0px;
+      padding-right: 0px;
+      display: flex;
+      flex-direction: column;
     }
     .image
     {
-      padding-left: 22px;
       flex-basis: 65%;
+    }
+    .optionNav
+    {
+      overflow-x: scroll;
+    }
+    .nav
+    {
+      padding:11px 5%;
     }
     .title
     {
-      padding-left:20px;
+      padding-top:23px;
+      padding-left:5%;
       font-size: 14px;
       line-height: 1.43;
     }
@@ -606,8 +670,10 @@ footer
     }
     .top
     { 
-      padding:10px 20px;
+      display: flex;
+      padding:10px 5%;
       text-align: center;
+      justify-content: space-between;
     }
     .top span
     {
@@ -623,13 +689,25 @@ footer
     }
     .navigation
     {
-      margin-left:20px;
+      padding:17px 5%;
+      font-size: 12px;
+      line-height:1.5;
     } 
+    .viewButtons
+    {
+      padding:20px 5%;
+      flex-direction: column;
+    }
+    .viewButtons button
+    {
+      margin-bottom: 20px;
+      margin-right:0px;
+    }
     .warning
     {
-      margin:20px 20px;
-      padding-right:10px;
-      padding-top:0px;
+      justify-content: space-between;
+      margin:20px 5%;
+      padding:0px 2%;
       height:80px;
       align-items: center;
       border-left:none;
