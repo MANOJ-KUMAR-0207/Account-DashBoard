@@ -190,6 +190,11 @@ div.message
   text-decoration: none;
   display: block;
 }
+.dropdown-content a:hover
+{
+  background-color: #006778;
+  transition: 0.7s;
+}
 .featured
 {
   display:flex;
