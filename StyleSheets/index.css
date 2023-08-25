@@ -176,23 +176,19 @@ div.message
 {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #022737;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  float:right;
+  text-align: center;
   width:100%;
 }
 .dropdown-content a 
 {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
-.dropdown-content a:hover 
-{
-  background-color: #006778;;
 }
 .featured
 {
@@ -656,10 +652,6 @@ footer
     {
       margin-right: 30%;
     }
-    .desktop
-    {
-      display:none;
-    }
     div.message
     {
       padding:10px 5%;
@@ -760,6 +752,7 @@ footer
     .navLinks
     {
       height:20px;
+      text-align: center;
     }
     .navLinks:hover
     {
