@@ -15,11 +15,11 @@
         <div class="top">
             <span class="assistence">Need Assistence?</span>
             <span>
-                <select>
-                    <option>A1029087 - John Carson Ec...</option>
-                    <option>A1029087 - John Carson Ec...</option>
-                    <option>A1029087 - John Carson Ec...</option>
-                    <option>A1029087 - John Carson Ec...</option>
+                <select id="account" onchange="changeAccount();">
+                    <option value="A1029087">A1029087 - John Carson Ec...</option>
+                    <option value="A1029088">A1029088 - John Carson Ec...</option>
+                    <option value="A1029089">A1029089 - John Carson Ec...</option>
+                    <option value="A1029082">A1029082 - John Carson Ec...</option>
                 </select>
             </span>
             <span class="fa-solid fa-envelope"></span>
@@ -63,7 +63,7 @@
         </div>
         <div class="title">
             <h1>Account Overview</h1>
-            <h2>The Church Fund - A1050919</h2>
+            <h2>The Church Fund - <span id="accountContent">A1050917</span></h2>
             <span>Balances as of 12/12/2012</span>
         </div>
         <div class="warning" id="warning">
@@ -77,7 +77,7 @@
                 <button onclick="closeWarning()"><span class="fa-solid fa-xmark cross"></span></button>
             </div>
         </div>
-        <div class="info" id="info">
+        <div class="info" id="infoContainer">
             <div class="balanceContainer">
                 <div class="balance">
                     <h2 class="balanceHeading">Currrent Balance</h2>
@@ -93,47 +93,47 @@
                 </div>
             </div>
             <div class="infoDiv">
-                <div class="optionNav">
-                    <div class="optionBox">
+                <div class="optionNav" id="optionNav">
+                    <div class="optionBox selected" id="Grants" onclick="grants()">
                         <span>Grants (1)</span>
                     </div>
-                    <div class="optionBox selected">
+                    <div class="optionBox" id="Contributions" onclick="contributions()">
                         <span>Contributions (1980)</span>
                     </div>
-                    <div class="optionBox">
+                    <div class="optionBox" id="Exchange" onclick="exchange()">
                         <span>Exchange (0)</span>
                     </div>
-                    <div class="optionBox">
+                    <div class="optionBox" id="Other-Transactions" onclick="otherTransactions()">
                         <span> Other Transactions (0)</span>
                     </div>
                 </div>
                 <div class="tab" >
                     <a href="#">Gift ID: 4436109</a>
-                    <p class="description">Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares.</p>
+                    <p class="description" id="info">Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares.</p>
                     <div class="tabColumns">
                         <div class="tabColumn">
                             <p>Entered Date</p>
-                            <span>10/4/2019</span>
+                            <span id="enteredDate">10/4/2019</span>
                         </div>
                         <div class="tabColumn">
                             <p>Receieved Date</p>
-                            <span>10/4/2019</span>
+                            <span id="receivedDate">10/4/2019</span>
                         </div>
                         <div class="tabColumn">
                             <p>Number of Shares</p>
-                            <span>50</span>
+                            <span id=shares>50</span>
                         </div>
                         <div class="tabColumn">
                             <p>Type</p>
-                            <span>VBS Security</span>
+                            <span id="type">VBS Security</span>
                         </div>
                         <div class="tabColumn">
                             <p>Amount</p>
-                            <span>$50,000.00</span>
+                            <span id="amount">$50,000.00</span>
                         </div>
                         <div class="tabColumn" >
                             <p>Status</p>
-                            <span>Entered</span>
+                            <span id="status">Entered</span>
                         </div>
                     </div>
                     <hr>

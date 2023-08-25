@@ -1,0 +1,37 @@
+{
+    "Grants" : {
+    "info" : "Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares of Grants.",
+    "EnteredDate" : "30/07/1987",
+    "ReceivedDate" : "06/06/1990",
+    "NumberofShares" : "50",
+    "Type" : "VBS Security",
+    "Amount" : "$30,000.00",
+    "Status" : "Entered"},
+    "Contributions" : {
+        "info" : "Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares of Contributions.",
+        "EnteredDate" : "10/07/1987",
+        "ReceivedDate" : "06/08/2000",
+        "NumberofShares" : 580,
+        "Type" : "VBS Security",
+        "Amount" : "$700,00.00",
+        "Status" : "Exit"
+    },
+    "Exchange" : {
+        "info" : "Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares of Exchange.",
+        "EnteredDate" : "30/07/2018",
+        "ReceivedDate" : "06/06/2021",
+        "NumberofShares" : 50,
+        "Type" : "VBS Security",
+        "Amount" : "$10,000.00",
+        "Status" : "Entered"
+    },
+    "Other Transactions" : {
+        "info" : "Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares of Other Transactions.",
+        "EnteredDate" : "10/04/1997",
+        "ReceivedDate" : "06/08/2000",
+        "NumberofShares" : 180,
+        "Type" : "VBS Security",
+        "Amount" : "$100,000.00",
+        "Status" : "Exit"
+    }
+}

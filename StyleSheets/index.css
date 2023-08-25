@@ -781,7 +781,8 @@ footer
     {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
+      flex-direction: column;
+      overflow-x: scroll;
     }
     .socialLogos
     {
