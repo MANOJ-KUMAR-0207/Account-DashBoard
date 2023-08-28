@@ -25,7 +25,7 @@
         "Amount" : "$10,000.00",
         "Status" : "Entered"
     },
-    "Other Transactions" : {
+    "OtherTransactions" : {
         "info" : "Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares of Other Transactions.",
         "EnteredDate" : "10/04/1997",
         "ReceivedDate" : "06/08/2000",
@@ -33,5 +33,27 @@
         "Type" : "VBS Security",
         "Amount" : "$100,000.00",
         "Status" : "Exit"
-    }
+    },
+    "Carousel": [
+        {
+            "Title" : "Featured-1",
+            "column1Content" : "Learn what are grants",
+            "column2Content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium, doloremque quaerat aliquid eveniet, aperiam et rem, beatae minima necessitatibus delectus adipisci debitis sed cum magni voluptatum quisquam nesciunt qui libero veniam pariatur iste? Voluptatibus, nisi?"
+        },
+        {
+            "Title" : "Featured-2",
+            "column1Content" : "Learn more about Conribution",
+            "column2Content" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ut maiores cum maxime rem error eligendi facere. Modi, provident quae."
+        },
+        {
+            "Title" : "Featured-3",
+            "column1Content" : "Learn how exchange works and backend process of it",
+            "column2Content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi dolorum, quae rem culpa commodi explicabo quisquam quis beatae vitae perferendis maiores voluptates? Sequi quas ullam dolore saepe! Odit illum ullam quos exercitationem ut nam doloremque omnis dolores ratione esse, vel at natus a cum!"
+        },
+        {
+            "Title" : "Featured-4",
+            "column1Content" : "Learn the concept of Shares",
+            "column2Content" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, rem sapiente soluta accusamus placeat atque velit temporibus, voluptas, porro doloribus cum vitae vero. Beatae explicabo nulla quas quo facere ad repudiandae necessitatibus ducimus illo, impedit, hic quod libero. Fugit atque at provident pariatur esse dolores accusamus veritatis asperiores a impedit."
+        }
+      ]
 }
