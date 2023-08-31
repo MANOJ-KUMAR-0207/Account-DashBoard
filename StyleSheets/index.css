@@ -219,6 +219,7 @@ div.message
   background-color: white;
   border: solid 0.6px #727272;
   color: #727272;
+  cursor: pointer;
 }
 .featuredColumn1
 {
@@ -411,6 +412,7 @@ footer
     border:rgba(128, 152, 213, 0.08) solid 1px;
     float: left;
     background-color: #f2f2f2;
+    cursor: pointer;
 }
 .selected
 {
@@ -507,10 +509,8 @@ footer
     font-family: HelveticaNeue;
     font-size: 12px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.5px;
+    cursor: pointer;
 }
 .warning
 { 

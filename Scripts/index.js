@@ -1,30 +1,37 @@
-var data; 
-function readData()
-{
-  var xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET","/Scripts/data.json",false);
-    xmlhttp.send();
-    if(xmlhttp.readyState==4 && xmlhttp.status==200)
-        data=JSON.parse(xmlhttp.responseText);
+var data;
+function readData() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", "/Scripts/data.json", false);
+  xmlhttp.send();
+  if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+    data = JSON.parse(xmlhttp.responseText);
 }
+
 readData();
 console.log(data);
-function dropDown() {
+function dropDown() 
+{
   document.getElementById("dropDown").classList.toggle("show");
 }
-function closeWarning() {
+
+function closeWarning() 
+{
   document.getElementById("warning").remove();
   document.getElementById("infoContainer").style.marginTop = "30px";
 }
-function changeAccount() {
+
+function changeAccount() 
+{
   var name_date = document.getElementById("account").value;
-  var name=name_date.split("-")[0];
-  var date=name_date.split("-")[1];
+  var name = name_date.split("-")[0];
+  var date = name_date.split("-")[1];
   document.getElementById("accountContent").innerHTML = name;
-  document.getElementById("balanceDate").innerHTML=date;
+  document.getElementById("balanceDate").innerHTML = date;
 }
+
 let selectedOption = data.Grants;
-function deSelectAll() {
+function deSelectAll() 
+{
   var optionBoxes = document.getElementById("optionNav").children;
   for (var i = 0; i < optionBoxes.length; i++)
     optionBoxes[i].classList.remove("selected");
@@ -34,27 +41,35 @@ function grants()
   deSelectAll();
   selectedOption = data.Grants;
   updateData();
-  document.getElementById("Grants").classList.add("selected");
+  document.getElementById("grants").classList.add("selected");
 }
-function contributions() {
+
+function contributions() 
+{
   deSelectAll();
   selectedOption = data.Contributions;
   updateData();
-  document.getElementById("Contributions").classList.add("selected");
+  document.getElementById("contributions").classList.add("selected");
 }
-function exchange() {
+
+function exchange()
+{
   deSelectAll();
   selectedOption = data.Exchange;
   updateData();
-  document.getElementById("Exchange").classList.add("selected");
+  document.getElementById("exchange").classList.add("selected");
 }
-function otherTransactions() {
+
+function otherTransactions() 
+{
   deSelectAll();
   selectedOption = data.OtherTransactions;
   updateData();
-  document.getElementById("Other-Transactions").classList.add("selected");
+  document.getElementById("otherTransactions").classList.add("selected");
 }
-function updateData() {
+
+function updateData() 
+{
   document.getElementById("info").innerHTML = selectedOption.info;
   document.getElementById("enteredDate").innerHTML = selectedOption.EnteredDate;
   document.getElementById("receivedDate").innerHTML = selectedOption.ReceivedDate;
@@ -64,18 +79,24 @@ function updateData() {
 }
 var pageNumberIndex = 0;
 var carouselContent = data.Carousel[pageNumberIndex];
-function fillCarousel() {
+
+function fillCarousel() 
+{
   document.getElementById("carouselTitle").innerHTML = carouselContent.Title;
   document.getElementById("carouselContent1").innerHTML = carouselContent.column1Content;
   document.getElementById("carouselContent2").innerHTML = carouselContent.column2Content;
 }
-function nextPage() {
+
+function nextPage() 
+{
   pageNumberIndex++;
   pageNumberIndex = pageNumberIndex % 4;
   carouselContent = data.Carousel[pageNumberIndex];
   fillCarousel();
 }
-function previousPage() {
+
+function previousPage() 
+{
   pageNumberIndex--;
   if (pageNumberIndex < 0)
     pageNumberIndex = 3;
